@@ -1,5 +1,6 @@
 import React from 'react';
 import Chart from './Chart';
+import SongForm from'./SongForm';
 
 const ChartList = ({ charts, updateChart, destroyChart }) => (
   <div className="row">
@@ -8,6 +9,7 @@ const ChartList = ({ charts, updateChart, destroyChart }) => (
         updateChart={updateChart}
         destroyChart={destroyChart} />
     )
+
   }
   </div>
 )

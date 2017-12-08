@@ -2,9 +2,8 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import ChartForm from './components/ChartForm';
 import ChartList from './components/ChartList';
+import SongForm from './components/SongForm';
 import { Container, Image } from 'semantic-ui-react';
-import Chart from './components/Chart';
-
 <style>
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 </style>
@@ -40,7 +39,6 @@ class App extends Component {
   })
 }
 
-
   destroyChart = (id) => {
     axios.delete(`/api/charts/${id}`)
       .then( () => {
@@ -60,11 +58,13 @@ class App extends Component {
       <div>
         <ChartForm addChart={this.addChart} />
         <br />
+        <br />
         <ChartList
           charts={this.state.charts}
           update={this.updateChart}
           destroy={this.destroyChart}
         />
+
       </div>
     </Container>
   </div>

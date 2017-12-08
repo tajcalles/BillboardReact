@@ -1,4 +1,5 @@
 import React from 'react';
+import { Input } from 'semantic-ui-react';
 
 class ChartForm extends React.Component {
   state = { name: '' }
@@ -16,7 +17,7 @@ class ChartForm extends React.Component {
   render () {
     return(
       <form onSubmit={this.handleSubmit}>
-        <input
+        <Input focus
           placeholder="Add a Chart"
           required
           value={this.state.name}
