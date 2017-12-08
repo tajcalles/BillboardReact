@@ -53,7 +53,7 @@ class App extends Component {
     return (
     <div className="main-div">
       <Container textAlign='center'>
-        <h1>Billboard App</h1>
+        <h1>Top 100</h1>
         <Image src='client/src/assets/images/album-default.jpg' size='small' />
       <div>
         <ChartForm addChart={this.addChart} />
