@@ -3,7 +3,6 @@ import { Card, Grid, Divider, Button } from 'semantic-ui-react';
 
 const styles = {
   pointer: { cursor: 'pointer' },
-
 }
 
 const extra = (
