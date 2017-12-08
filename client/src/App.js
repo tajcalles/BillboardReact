@@ -3,6 +3,9 @@ import axios from 'axios';
 import ChartForm from './components/ChartForm';
 import ChartList from './components/ChartList';
 import { Container, Image } from 'semantic-ui-react';
+<style>
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+</style>
 
 class App extends Component {
   state = { charts: [] }
